@@ -1,0 +1,37 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.saucedemo.com/v1/');
+  // await page.locator('iframe[name="a-tr0tjo3u6pyt"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(2) > td').first().click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(2) > td').first().click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('.rc-imageselect-tile').first().click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('td:nth-child(3)').first().click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(3) > td').first().click();
+  // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  // await page.getByRole('link', { name: 'Swag Labs Swag Labs https://' }).click();
+  // await page.locator('[data-test="username"]').click();
+  await page.locator('[data-test="username"]').fill('standard_user');
+  await page.locator('[data-test="password"]').click();
+  await page.locator('[data-test="password"]').fill('secret_sauce');
+  await page.getByRole('button', { name: 'LOGIN' }).click();
+  await page.locator('div:nth-child(3) > .pricebar > .btn_primary').click();
+  await page.getByRole('link', { name: '1' }).click();
+  await page.getByRole('link', { name: 'CHECKOUT' }).click();
+  await page.locator('[data-test="firstName"]').click();
+  await page.locator('[data-test="firstName"]').fill('abinaya');
+  await page.locator('[data-test="lastName"]').click();
+  await page.locator('[data-test="lastName"]').fill('shankar');
+  await page.locator('#checkout_info_container div').nth(1).click();
+  await page.locator('[data-test="postalCode"]').click();
+  await page.locator('[data-test="postalCode"]').fill('123456');
+  await page.getByRole('button', { name: 'CONTINUE' }).click();
+  await page.getByRole('link', { name: 'FINISH' }).click();
+});

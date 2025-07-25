@@ -1,0 +1,2 @@
+test started succesfully
+test successfully completed
