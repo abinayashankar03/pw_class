@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test.only('test', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/v1/');
   // await page.locator('iframe[name="a-tr0tjo3u6pyt"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
   // await page.locator('iframe[name="c-tr0tjo3u6pyt"]').contentFrame().locator('tr:nth-child(2) > td').first().click();

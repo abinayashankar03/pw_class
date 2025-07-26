@@ -1,0 +1,34 @@
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="0.9913300000000002">
+<testsuite name="tags.spec.js" timestamp="2025-07-18T08:05:08.247Z" hostname="chromium" tests="5" failures="0" skipped="0" time="0.005" errors="0">
+<testcase name="test1  @smoke" classname="tags.spec.js" time="0.003">
+<system-out>
+<![CDATA[test 1 executed
+]]>
+</system-out>
+</testcase>
+<testcase name="test2 @reg" classname="tags.spec.js" time="0">
+<system-out>
+<![CDATA[test 2 executed
+]]>
+</system-out>
+</testcase>
+<testcase name="test3 @smoke" classname="tags.spec.js" time="0.001">
+<system-out>
+<![CDATA[test 3 executed
+]]>
+</system-out>
+</testcase>
+<testcase name="test4 @reg" classname="tags.spec.js" time="0">
+<system-out>
+<![CDATA[test 4 executed
+]]>
+</system-out>
+</testcase>
+<testcase name="test5 @smoke @reg" classname="tags.spec.js" time="0.001">
+<system-out>
+<![CDATA[test 5 executed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

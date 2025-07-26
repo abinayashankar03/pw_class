@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 
-test.skip('keyboard action',async({page})=>{
+test('keyboard action',async({page})=>{
     await page.goto('https://gotranscript.com/text-compare')
 
     await page.locator('//textarea[@name="text1"]').fill("playwright")
@@ -14,20 +14,20 @@ test.skip('keyboard action',async({page})=>{
     await page.pause()
 })
 
-test.skip('mouse action',async({page})=>{
+test('mouse action',async({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/')
     await page.locator('//button[@class="dropbtn"]').hover()
     await page.pause()
 })
 
-test.skip('right click',async({page})=>{
+test('right click',async({page})=>{
     await page.goto('https://swisnl.github.io/jQuery-contextMenu/demo.html')
     await page.locator('//span[@class="context-menu-one btn btn-neutral"]').click({button:'right'})
 
     await page.pause()
 })
 
-test.skip('double click',async({page})=>{
+test('double click',async({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/')
     await page.locator('//input[@id="field1"]').fill('playwright')
     await page.locator('//button[@ondblclick="myFunction1()"]').dblclick()

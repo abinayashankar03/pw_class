@@ -1,6 +1,6 @@
 import{test,expect} from '@playwright/test'
 
-test("buildin assertion",async({page})=>{
+test.only("buildin assertion",async({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/")
     await expect(page).toHaveURL("https://testautomationpractice.blogspot.com/")
     await expect(page).toHaveTitle("Automation Testing Practice")

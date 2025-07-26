@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test'
 import login from "./JSON/login.json"
 
 
-test("orangehrm login by using Xpath",async({page})=>{
+test.only("orangehrm login by using Xpath",async({page})=>{
 
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 

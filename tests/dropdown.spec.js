@@ -1,6 +1,6 @@
 import{test,expect} from '@playwright/test'
 
-test.skip("single select dropdown",async({page})=>{
+test("single select dropdown",async({page})=>{
 
     await page.goto("https://testautomationpractice.blogspot.com/")
 
@@ -12,7 +12,7 @@ test.skip("single select dropdown",async({page})=>{
 })
 
 
-test.skip("multiselect dropdown",async({page})=>{
+test("multiselect dropdown",async({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/")
 
     await page.locator('//select[@id="colors"]').selectOption(["Red","Yellow","White"])

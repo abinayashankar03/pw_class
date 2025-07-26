@@ -1,6 +1,6 @@
 import{test,expect} from '@playwright/test'
 
-test("handling frames",async({page})=>{
+test.only("handling frames",async({page})=>{
     await page.goto('https://rahulshettyacademy.com/AutomationPractice/')
 
     // const frame=await page.frames()
@@ -20,7 +20,7 @@ test("handling frames",async({page})=>{
     await page.pause()
 })
 
-test.only("childframe",async({page})=>{
+test("childframe",async({page})=>{
     await page.goto('https://ui.vision/demo/webtest/frames/')
 
     const frame=await page.frame({url:'https://ui.vision/demo/webtest/frames/frame_3.html'})
